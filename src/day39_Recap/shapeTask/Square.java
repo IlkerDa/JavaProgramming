@@ -20,7 +20,24 @@ public class Square extends Shape { // extends etmeden once additional variablel
         setSide(side); // burda basta this ile create etti ama setter ile degistirdim
     }
 
+    @Override
+    public double area() {
+        return side*side;
+    }
 
+    @Override
+    public double perimeter() {
+        return side*4;
+    }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "side='" + side + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
 }
 
 /*

@@ -21,6 +21,26 @@ public class Circle extends Shape {
         }
         this.radius = radius;
     }
+
+    @Override
+    public double area() {
+        return pi*radius*radius;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2*pi*radius;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius='" + radius + '\'' +
+                ", pi='" + pi + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
 }
 
 /*

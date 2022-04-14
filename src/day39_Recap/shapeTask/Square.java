@@ -9,7 +9,7 @@ public class Square extends Shape { // extends etmeden once additional variablel
 
     public void setSide(double side) {
         if(side<=0){
-            System.err.println("Invalid side");
+            System.err.println("Invalid side: "+ side);
             System.exit(1);
         }
         this.side = side;
